@@ -14,23 +14,23 @@ Its truth table:
   <img src="images/truth_table.png" width="250"/>
 </p>
 
-###Circuit:
+### Circuit:
 <p align="left">
   <img src="images/circuit.gif" width="200"/>
 </p>
 
-Model of computation:
+### Model of computation:
 <p align="left">
   <img src="images/MoC.png" width="400"/>
 </p>
-Results:
+### Results:
 The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
 Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram.png" width="400"/>
 <p>
 
-Tutorial 1:
+### Tutorial 1:
 Create a decoder_2by4 based on this decoder_1by2.<br>
 Reuse the systemc module for decoder_1by2 cascaded to build a more complex module for the decoder_2by4.
 <em>Hint:</em> use additional and logic (AND) gates to determine the final outputs as in the truth table.
