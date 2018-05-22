@@ -17,17 +17,12 @@ sc_in<bool> m_a, m_b, m_c, m_d, m_e, m_f;
 
 SC_CTOR(monitor){
 	SC_METHOD(monita);
-	sensitive<<m_a;
-	sensitive<<m_b;
-	sensitive<<m_c;
-	sensitive<<m_d;
-	sensitive<<m_e;
-	sensitive<<m_f;
+	sensitive<<m_a<<m_b<<m_c<<m_d<<m_e<<m_f;
 	dont_initialize();
 }
 
 void monita(void){
-cout<<sc_time_stamp()<<"\t"<<m_f<<" \t "<<m_e<<" \t "<<m_a<<" \t "<<m_b<<" \t "<<m_c<<" \t "<<m_d<<endl;
+cout<<"at "<<sc_time_stamp()<<"   inputs: "<<m_f<<" & "<<m_e<<" outputs are: "<<m_a<<"  "<<m_b<<"  "<<m_c<<"  "<<m_d<<endl;
 }
 };
 #endif /* MONITOR_H_ */
