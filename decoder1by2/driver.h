@@ -19,16 +19,19 @@ SC_CTOR(driver){
 
 void drive(void){
 	while(1){
-
 		d_b=0;
 		d_a=0;
 		wait(5,SC_NS);
+
+		d_b=0;
 		d_a=1;
 		wait(5,SC_NS);
 
 		d_b=1;
 		d_a=0;
 		wait(5,SC_NS);
+
+		d_b=1;
 		d_a=1;
 		wait(5,SC_NS);
 	}
