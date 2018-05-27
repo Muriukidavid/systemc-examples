@@ -1,0 +1,58 @@
+$date
+     May 26, 2018       22:00:29
+$end
+
+$version
+ SystemC 2.3.2-Accellera --- May 11 2018 15:19:47
+$end
+
+$timescale
+     1 ns
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  binary_input1       $end
+$var wire    1  aaaab  binary_input2       $end
+$var wire    1  aaaac  input_is_00        $end
+$var wire    1  aaaad  input1_is_01       $end
+$var wire    1  aaaae  input1_is_10        $end
+$var wire    1  aaaaf  input1_is_11        $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+0aaaaa
+0aaaab
+1aaaac
+0aaaad
+0aaaae
+0aaaaf
+$end
+
+#5
+1aaaab
+0aaaac
+1aaaad
+
+#10
+1aaaaa
+0aaaab
+0aaaad
+1aaaae
+
+#15
+1aaaab
+0aaaae
+1aaaaf
+
+#20
+0aaaaa
+0aaaab
+1aaaac
+0aaaaf
+
+#25
