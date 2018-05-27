@@ -20,6 +20,11 @@ This is an abstract reprsentation of the decoder 2 by 4<br>
   <img src="images/decoder 2by4.png" width="400"/>
 </p>
 
+The inner workings of the decoder 2 by 4 can be broken down as shown in the figure below.<br>
+<p align="left">
+  <img src="images/insidedecoder2by4.png" width="400"/>
+</p>
+
 ### Results:
 The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
 Traced signals timing diagram:
