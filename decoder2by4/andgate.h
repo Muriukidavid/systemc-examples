@@ -23,7 +23,7 @@ SC_MODULE(andgate){
 }
 
     void andgt(void){
-        z = ( x==1 && y==1 )?1:0;
+        z = (x && y);
     }
 };
 
