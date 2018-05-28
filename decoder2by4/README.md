@@ -25,6 +25,11 @@ The inner workings of the decoder 2 by 4 can be broken down as shown in the figu
   <img src="images/insidedecoder2by4.png" width="400"/>
 </p>
 
+### Circuit:
+<p align="left">
+  <img src="images/circuit.gif" width="200"/>
+</p>
+
 ### Results:
 The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
 Traced signals timing diagram:
