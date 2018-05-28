@@ -8,17 +8,17 @@ Therefore 2 new classes anding_gate and inverter are introduced to model the abo
   <img src="images/2-to-4-Decoder-Circuit.jpg" width="200"/>
 </p>
 
-The truth table of the above circuit is as shown below:
+The truth table  is as shown below:
 
 <p align="left">
   <img src="images/truth-table.jpg" width="250"/>
 </p>
 
-The MOC of the above circuit is also shown below:
+The MOC of the reimplemented 1 t0 2 line decoder module is as shown below
 
 ### Model of computation:
 <p align="left">
-  <img src="images/" width="400"/>
+  <img src="images/moc.jpg" width="400"/>
 </p>
 
 ### Results:
