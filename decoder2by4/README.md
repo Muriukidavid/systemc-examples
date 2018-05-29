@@ -15,7 +15,7 @@ Its truth table:
 
 ###Circuit:
 <p align="left">
-  <img src="images/circuit.gif" width="200"/>
+  <img src="images/circuit.png" width="200"/>
 </p>
 
 Model of computation:
