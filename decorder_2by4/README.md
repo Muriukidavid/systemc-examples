@@ -1,3 +1,6 @@
+ABALLA SAMUEL OTIENO
+I39/2498/2016
+LAB2 REPORT
 This is a 2-by-4 decoder example, which is a makefile project and so no need for an IDE. 
 Just cd into this folder and run the command 
 
@@ -28,6 +31,5 @@ Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram.png" width="400"/>
 <p>
-RESULTS:
- The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
- Traced signals timing diagram:
+CONCLUSIONS:
+I achieved the objective of this LAB which was to feed the 2by4 decorder with two inputs to give 4 outputs.
