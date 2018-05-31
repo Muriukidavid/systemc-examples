@@ -26,11 +26,13 @@ A Model of computation of a 2by4 decoder using 4 AND gates and two 1by2 decoders
 <p align="left">
   <img src="images/moc.png" width="400"/>
 </p>
+
 ### Results:
 The above Mod Of Computation was implemented in systemc and the following output found from the traced signals.<br>
 Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram2.png" width="400"/>
 <p>
-### Conclusion:
+
+### Conclusions:
 A 2by4 decoder was implemented using two instances of a 1by2 decoder and 4 AND gates.
