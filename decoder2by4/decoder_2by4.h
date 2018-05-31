@@ -1,36 +1,33 @@
 /*
- * decoder_2by4.h
+ * driver.h
  *
  *  Created on: Mar 4, 2016
  *      Author: karibe
  */
+#ifndef DRIVER_H_
+#define DRIVER_H_
+#include<systemc>
 
-#ifndef DECODER_2BY4_H_
-#define DECODER_2BY4_H_
-#include<systemc.h>
+SC_MODULE(driver){
+sc_out<bool> d_a, d_b;
 
-SC_MODULE(decoder){
-//input and output ports
-sc_in<bool> a,b;
-sc_out<bool> w,x,y,z;
-//constructor: where the processes are bound to simulation kernel
-SC_CTOR(decoder){
-			SC_METHOD(decode);
-			sensitive<<a;
-			sensitive<<b;
-			//dont_initialize();
+SC_CTOR(driver){
+	SC_THREAD(drive);
 }
+void drive(void){
+	while(1){
+		d_a=0; d_b=0;
+		wait(5,SC_NS);
 
-~decoder(){
-//delete stuff :P
-}
+		d_a=0; d_b=1;
+		wait(5,SC_NS);
 
-void decode(void){
-	z=(a==0 && b==0)?1:0;
-	w=(a==0 && b==1)?1:0;
-	x=(a==1 && b==0)?1:0;
-	y=(a==1 && b==1)?1:0;
+		d_a=1; d_b=0;
+		wait(5,SC_NS);
+
+		d_a=1; d_b=1;
+		wait(5,SC_NS);
+	}
 }
 };
-
-#endif /* DECODER_2BY4_H_ */
+#endif /* DRIVER_H_ */
