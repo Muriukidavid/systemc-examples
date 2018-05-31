@@ -15,7 +15,7 @@ Below is a 2by4 decoder truth table:
 
 ### Circuit:
 <p align="left">
-  <img src="images/circuit.gif" width="200"/>
+  <img src="images/Circuit.png" width="200"/>
 </p>
 
 ### Model of computation:
