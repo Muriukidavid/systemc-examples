@@ -7,7 +7,7 @@
 #include"../decoder1by2/decoder_1by2.h"
 #include"driver.h"
 #include"monitor.h"
-#include"gate.h"
+#include"andgate.h"
 #include<systemc.h>
 
 int sc_main(int argc, char *argv[]){
