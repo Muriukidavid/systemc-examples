@@ -9,7 +9,7 @@
 #include "andgate.h"
 #include "monitor.h"
 #include<systemc.h>
-
+ 
 int sc_main(int argc, char *argv[]){
 //some signals for interconnections
 

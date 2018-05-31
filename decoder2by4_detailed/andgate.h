@@ -7,7 +7,7 @@
 #ifndef ANDGATES_H_
 #define ANDGATES_H_
 #include<systemc.h>
-
+ 
 SC_MODULE(and_gate){
 //input and output ports
 

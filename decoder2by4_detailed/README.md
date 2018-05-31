@@ -23,7 +23,7 @@ Its truth table:
 
 Model of computation:
 <p align="left">
-  <img src="images/MoC.png" width="400"/>
+  <img src="IMAGES/MoC.png" width="400"/>
 </p>
 Results:
 The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>

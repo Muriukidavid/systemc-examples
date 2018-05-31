@@ -9,7 +9,7 @@
 #include<iostream>
 #include<systemc>
 
-using namespace std;
+using namespace std; 
 
 SC_MODULE(monitor){
 sc_in<bool> m_a, m_b, m_c, m_d, m_e, m_f;
