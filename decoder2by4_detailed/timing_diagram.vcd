@@ -1,5 +1,5 @@
 $date
-     May 28, 2018       09:39:08
+     May 31, 2018       19:22:31
 $end
 
 $version
@@ -13,10 +13,10 @@ $end
 $scope module SystemC $end
 $var wire    1  aaaaa  binary_input1       $end
 $var wire    1  aaaab  binary_input2       $end
-$var wire    1  aaaac  input_is_00        $end
-$var wire    1  aaaad  input1_is_01       $end
-$var wire    1  aaaae  input1_is_10        $end
-$var wire    1  aaaaf  input1_is_11        $end
+$var wire    1  aaaac  output_1       $end
+$var wire    1  aaaad  output_2       $end
+$var wire    1  aaaae  output_3       $end
+$var wire    1  aaaaf  outout_4       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -50,9 +50,3 @@ $end
 1aaaaf
 
 #20
-0aaaaa
-0aaaab
-1aaaac
-0aaaaf
-
-#25
