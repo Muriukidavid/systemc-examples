@@ -1,8 +1,8 @@
 /*
  * decoder_1by2.cc
  *
- *  Created on: Mar 4, 2016
- *      Author: karibe
+ *  Created on: May 30, 2018
+ *      Author: Stephen
  */
 #include"decoder_2by4.h"
 #include"driver.h"
@@ -13,7 +13,7 @@ int sc_main(int argc, char *argv[]){
 //some signals for interconnections
 sc_signal<bool> in1,in2,out1, out2, out3, out4;
 //module instances
-decoder dec("decoder_instance");
+decoder2by4 dec("decoder_instance");
 driver dr("driver");
 monitor mn("monitor");
 //interconnections b2in modules

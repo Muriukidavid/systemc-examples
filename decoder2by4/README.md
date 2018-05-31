@@ -14,14 +14,9 @@ Its truth table:
   <img src="images/truth_table.jpeg" width="250"/>
 </p>
 
-### Circuit:
-<p align="left">
-  <img src="images/circuit.gif" width="200"/>
-</p>
-
 ### Model of computation:
 <p align="left">
-  <img src="images/moc.jpeg" width="400"/>
+  <img src="images/Decorder_gates.png" width="400"/>
 </p>
 
 ### Results:
@@ -30,3 +25,5 @@ Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram.png" width="400"/>
 <p>
+
+
