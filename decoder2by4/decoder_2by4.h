@@ -3,16 +3,13 @@
 #include<systemc.h>
 
 SC_MODULE(decoder){
-
 	//input and output ports
-	sc_in<bool> A0,A1;
-	sc_out<bool> D0,D1,D2,D3;
-	
+	sc_in<bool> in;
+	sc_out<bool> out1,out2;
 	//constructor: where the processes are bound to simulation kernel
 	SC_CTOR(decoder){
 		SC_METHOD(decode);
-		sensitive<<A0;
-		sensitive<<A1;
+		sensitive<<in;
 		//dont_initialize();
 	}
 
@@ -21,12 +18,9 @@ SC_MODULE(decoder){
 	}
 
 	void decode(void){
-		D0 = (A0==0 && A1==0)?1:0;
-		D1 = (A0==0 && A1==1)?1:0;
-		D2 = (A0==1 && A1==0)?1:0;
-		D3 = (A0==1 && A1==1)?1:0;
+		out1=(in==0)?1:0;
+		out2=(in==1)?1:0;
 	}
-	
 };
 
 

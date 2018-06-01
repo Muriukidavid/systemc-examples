@@ -1,23 +1,24 @@
 A 2 to 4 line decoder is a 4 output logic circuit that takes 2 inputs. At any point in time, according to the combination of the input signals, there can only be 1 output signal that is HIGH. 
 
-As a decoder, The circuit is shown below:
+This is reimplementation of the 2 to 4 line decoder with 1 more submodule. The level of abstraction has dropped to model the behaviour of the ANDing function perfommed on the output signals of the 1 to 2 line decoders.
+Therefore a new class anding_gate is introduced to model the above functionality.
  
 ### Circuit:
 <p align="left">
   <img src="images/2-to-4-Decoder-Circuit.jpg" width="200"/>
 </p>
 
-The truth table of this decoder is as shown below:
+The truth table of the above circuit is as shown below:
 
 <p align="left">
   <img src="images/truth-table.jpg" width="250"/>
 </p>
 
-The MOC of the above circuit is as shown below:
+The MOC of the above circuit is also shown below:
 
 ### Model of computation:
 <p align="left">
-  <img src="images/moc.jpg" width="400"/>
+  <img src="images/moc.png" width="400"/>
 </p>
 
 ### Results:
@@ -28,7 +29,6 @@ Traced signals timing diagram:
   <img src="images/result.png" width="400"/>
 <p>
 
-
 ### Conslusion:
 Conclusion:
-The 2 to 4 line decoder was implemented with abstraction. The moc implemented differs from the one provided in class in terms of port names. However, the  result obtained is correct.
+The 2 to 4 line decoder was implemented with lesser abstraction. The result obtained is correct.

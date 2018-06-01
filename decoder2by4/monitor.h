@@ -1,3 +1,4 @@
+
 #ifndef MONITOR_H_
 #define MONITOR_H_
 #include<iostream>
@@ -6,23 +7,16 @@
 using namespace std;
 
 SC_MODULE(monitor){
+sc_in<bool> m1, m2, m3, m4, m5, m6;
 
-	sc_in<bool> m_A0;
-	sc_in<bool> m_A1;
-	sc_in<bool> m_D0;
-	sc_in<bool> m_D1;
-	sc_in<bool> m_D2;
-	sc_in<bool> m_D3;
-						
+SC_CTOR(monitor){
+	SC_METHOD(monita);
+	dont_initialize();
+}
 
-	SC_CTOR(monitor){
-		SC_METHOD(monita);
-		sensitive<<m_D0<<m_D1<<m_D2<<m_D3;
-		dont_initialize();
-	}
 
-	void monita(void){
-		cout<<"at "<<sc_time_stamp()<<"input A1: "<<m_A1<<"input A0: "<<m_A0<<"outputs are: "<<m_D3<<" "<<m_D2<<" "<<m_D1<<" 			"<<m_D0<<endl;
+void monita(void){
+		cout<<"at "<<sc_time_stamp()<<" 1st_binary_input: "<<m1<<" 2nd_binary_input: "<<m2<<" d_out1: "<<m3<<" d_out2 "<<m4<<"  d_out3 "<<m5<<" d_out4 "<<m6<<endl;
 	}
 };
 #endif /* MONITOR_H_ */
