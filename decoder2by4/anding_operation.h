@@ -1,7 +1,7 @@
 #ifndef ANDING_OPERATION_H_
 #define ANDING_OPERATION_H_
 #include<iostream>
-#include<systemc>
+#include<systemc.h>
 
 SC_MODULE(anding_gate){
 	// input and output ports

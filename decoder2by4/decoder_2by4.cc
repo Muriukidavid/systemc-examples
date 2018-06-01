@@ -1,16 +1,16 @@
-#include"decoder_2by4.h"
 #include"driver.h"
+#include"inverter_operation.h"
 #include"anding_operation.h"
 #include"monitor.h"
 #include<systemc.h>
 
 int sc_main(int argc, char *argv[]){
 	//some signals for interconnections
-	sc_signal<bool> d_in1, d_in2, A1, A2, A3, A4, d_out1, d_out2, d_out3, d_out4;
+	sc_signal<bool> d_in1, d_in2, d_x, A1, A2, A3, A4, d_out1, d_out2, d_out3, d_out4;
 
-	//module instances
-	decoder dec("decoder");
-	decoder dec2("decoder_2");
+	//class objects
+	inverter inv("inverter_1");
+	inverter inv2("inverter_2");
 	driver dr("driver");
 	monitor mn("monitor");
 	anding_gate and_gate("anding_gate");
@@ -20,19 +20,25 @@ int sc_main(int argc, char *argv[]){
 		Create interconnections b2in modules 
 	************************************************/
 	// driver object
+	dr.d_x2(d_x);
 	dr.d_A0(d_in1);
 	dr.d_A1(d_in2);
 
-	// decoder object 1
-	dec.in(d_in1);
-	dec.out1(A1);
-	dec.out2(A2);
 
-	// decoder object 2
-	dec2.in(d_in2);
-	dec2.out1(A3);
-	dec2.out2(A4);
-
+	// inverter object 1
+	inv.m(d_x);
+	inv.k(d_x);
+	inv.x1(d_in1);
+	inv.out1(A1);
+	inv.out2(A2);
+	
+	// inverter object 2
+	inv2.m(d_x);
+	inv2.k(d_x);
+	inv2.x1(d_in2);
+	inv2.out1(A3);
+	inv2.out2(A4);
+	
 	// anding_gate object
 	and_gate.g1_a(A1);
 	and_gate.g1_b(A3);
@@ -51,6 +57,7 @@ int sc_main(int argc, char *argv[]){
 	and_gate.g4_c(d_out4);
 
 	// monitor object
+	mn.m0(d_x);
 	mn.m1(d_in1);
 	mn.m2(d_in2);
 	mn.m3(d_out1);
@@ -68,7 +75,8 @@ int sc_main(int argc, char *argv[]){
 	tf->set_time_unit(1, SC_NS);
 	
 	//trace the signals interconnecting modules
-	sc_trace(tf, d_in1, "d_in1"); // signals to be traced
+	sc_trace(tf, d_x, "d_x");	// signals to be traced
+	sc_trace(tf, d_in1, "d_in1"); 
 	sc_trace(tf, d_in2, "d_in2");
 	sc_trace(tf, d_out1, "d_out1");
 	sc_trace(tf, d_out2, "d_out2");
