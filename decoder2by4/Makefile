@@ -4,8 +4,8 @@ all: decoder
 
 decoder:#prerequisites
 	@echo 'building file $(@F)'
-	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c decoder_2by4.cc
-	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "decoder" decoder_2by4.o -lsystemc
+	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c decoder_1by2.cc
+	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "decoder" decoder_1by2.o -lsystemc
 	./decoder
 	gtkwave -c 4 timing_diagram.vcd
 
