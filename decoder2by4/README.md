@@ -30,3 +30,9 @@ Below is the timing diagram
   <img src="images/timing_diagram.png" width="400"/>
 </p>
 
+### Conclusion:
+#### Challenges
+* Eclipse IDE wasn't as friendly. It's 2018 :-)
+#### Successes
+* The results after implementation matched the truth table.
+
