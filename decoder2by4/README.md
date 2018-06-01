@@ -24,5 +24,9 @@ Its truth table:
   <img src="images/MoC.png" width="400"/>
 </p>
 
-
+### Results:
+Below is the timing diagram
+<p align="left">
+  <img src="images/timing_diagram.png" width="400"/>
+</p>
 
