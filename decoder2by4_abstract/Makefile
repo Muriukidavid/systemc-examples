@@ -10,12 +10,9 @@ decoder:prerequisites
 	gtkwave -c 4 timing_diagram.vcd
 
 prerequisites: 
-ifeq ('$(GTKWAVE)' , "/usr/bin/gtkwave")
-	@echo '$(GTKWAVE)'
+ifneq "$(GTKWAVE)" "/usr/bin/gtkwave"
 	@echo 'installing gtkwave, please be patient'
 	sudo apt-get install -y gtkwave
-else 
-	@echo "gtkwave already installed"
 endif
 
 clean:

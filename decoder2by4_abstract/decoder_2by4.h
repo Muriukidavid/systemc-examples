@@ -5,18 +5,19 @@
  *      Author: karibe
  */
 
-#ifndef DECODER_1BY2_H_
-#define DECODER_1BY2_H_
+#ifndef DECODER_2BY4_H_
+#define DECODER_2BY4_H_
 #include<systemc.h>
 
 SC_MODULE(decoder){
 //input and output ports
-sc_in<bool> a;
-sc_out<bool> b,c;
+sc_in<bool> a,d;
+sc_out<bool> b,c,e,f;
 //constructor: where the processes are bound to simulation kernel
 SC_CTOR(decoder){
 	SC_METHOD(decode);
 	sensitive<<a;
+	sensitive<<d;
 	//dont_initialize();
 }
 
@@ -25,8 +26,10 @@ SC_CTOR(decoder){
 }
 
 void decode(void){
-	b=(a==0)?1:0;
-	c=(a==1)?1:0;
+	b=(a==0&&d==0)?1:0;
+	c=(a==0&&d==1)?1:0;
+	e=(a==1&&d==0)?1:0;
+	f=(a==1&&d==1)?1:0;
 }
 };
 
