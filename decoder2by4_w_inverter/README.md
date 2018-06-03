@@ -11,7 +11,7 @@ In the following truth table, only the output D0 is high when the input is zero,
 Only one signal is high(selected) when the right binary number is available on the input. <br>
 Its truth table: 
 <p align="left">
-  <img src="images/truth_table.jpg" width="250"/>
+  <img src="images/truth_table.jpeg" width="250"/>
 </p>
 
 ### Circuit:
