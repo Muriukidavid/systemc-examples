@@ -25,16 +25,16 @@ int sc_main(int argc, char *argv[]) {
 		dec.b(in2);
 		mn.m_b(in2);
 
-		dec.c(out1);
+		dec.out_1(out1);
 		mn.m_c(out1);
 
-		dec.d(out2);
+		dec.out_2(out2);
 		mn.m_d(out2);
 
-		dec.e(out3);
+		dec.out_3(out3);
 		mn.m_e(out3);
 
-		dec.f(out4);
+		dec.out_4(out4);
 		mn.m_f(out4);
 
 		//create a trace file with nanosecond resolution
