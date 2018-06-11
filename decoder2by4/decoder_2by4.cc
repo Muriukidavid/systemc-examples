@@ -4,18 +4,19 @@
  *  Created on: Mar 4, 2016
  *      Author: karibe
  */
-#include"decoder_1by2.h"
+//#include"decoder_1by2.h"
+#include"decoder_2by4.h"
 #include"driver.h"
 #include"monitor.h"
 #include<systemc.h>
 
 int sc_main(int argc, char *argv[]){
 //some signals for interconnections
-sc_signal<bool> in, out1, out2;
+sc_signal<bool> drive_a,drive_b,mon_c,mon_d,mon_e,mon_f;
 //module instances
-decoder dec("decoder_instance");
+decoder_2by4 dec("decoder_instance");
 driver dr("driver");
-monitor mn("monitor");
+monitor mn("monita");
 //interconnections b2in modules
 dr.d_a(drive_a);
 dec.d_in1(drive_a);
