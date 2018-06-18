@@ -25,9 +25,9 @@ int sc_main(int argc, char* argv[])
 	fp=sc_create_vcd_trace_file("vcd_trace");
 	fp->set_time_unit(1, SC_PS);
 
-	sc_trace(fp, s_din, "Input");
+	sc_trace(fp, s_din, "Input(D)");
 	sc_trace(fp, clock, "CLK");
-	sc_trace(fp, s_dout, "Output");
+	sc_trace(fp, s_dout, "Output(Q)");
 
 	sc_start(20, SC_PS);
 	sc_close_vcd_trace_file(fp);

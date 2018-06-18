@@ -1,11 +1,11 @@
 GTKWAVE:=$(which gtkwave)
 
-all: dff
+all: Dflipflop
 
-dff:#prerequisites
+Dflipflop:#prerequisites
 	@echo 'building file $(@F)'
-	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c dff.cc driver.cc main.cpp monitor.cc
-	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "dff" dff.o driver.o monitor.o main.o -lsystemc
+	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c dff.cc driver.cc main.cpp monitor.cc nandgate.cc
+	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "dff" dff.o driver.o monitor.o nandgate.o main.o -lsystemc
 	./dff
 	gtkwave -c 4 vcd_trace.vcd
 
@@ -17,4 +17,4 @@ dff:#prerequisites
 
 clean:
 	rm -f dff *.o vcd_trace.vcd
-.PHONY: dff
+.PHONY: Dflipflop
