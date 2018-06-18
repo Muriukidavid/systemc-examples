@@ -1,19 +1,19 @@
-D Flip-flops are used as a part of memory storage elements and data processors as well. D flip-flop can be built using NAND gate or with NOR gate. The major applications of D flip-flop are to introduce delay in timing circuit, as a buffer, sampling data at specific intervals. Whenever the clock signal is LOW, the input is never going to affect the output state. The clock has to be high for the inputs to get active. Thus, D flip-flop is a controlled Bi-stable latch where the clock signal is the control signal. 
+Here we model the 4 bit PISO shift register. For this type of register, the data is supplied in parallel, for example consider the 4-bit shift register shown in the circuit below.
+This register can be used to store and shift a 4-bit word, with the write/shift (WS) control input controlling the mode of operation of the shift register. When the WS control line is low (Write Mode), data can be written and clocked in via D0 to D3. To shift the data out serially, the WS control line is brought HIGH (Shift mode), the register then shifts the data out on clock input.
+The implementation is achieved by using the DFF modelled earlier. Four instances of the previous DFFs are created and more gates added according to the circuit below. 
 
-In this lab we are using NAND gates for demonstrating the D flip flop. As a result of adding the details to the previous implementation, these files, main.cpp, dff.h and dff.cc have been edited to add more input and output ports. More signals have been added in the main.cpp file to map the output ports to the input ports.
-
-### The symbol of a DFF
-The symbol of a D-flipflop is as shown below
-
-<p align="left">
-  <img src="images/symbol.png" width="250"/>
-</p>
-
-### The circuit for the DFF
+### The circuit for the register
 The circuit implementation of the D-flipflop is as shown below
 
 <p align="left">
   <img src="images/circuit.png" width="250"/>
+</p>
+
+### The timing diagram 
+The timing diagram of the above register is as shown below
+
+<p align="left">
+  <img src="images/timing-diagram.png" width="250"/>
 </p>
 
 ### The MOC 
@@ -24,10 +24,10 @@ The MOC of the lab is as shown below
 </p>
 
 ### The Truth table
-The truth table of the circuit above is as shown below
+The truth table of the register above is as shown below
 
 <p align="left">
-  <img src="images/truth-table.png" width="250"/>
+  <img src="images/truthtable.png" width="250"/>
 </p>
 
 ### The result 
@@ -40,5 +40,5 @@ The result of this lab is shown in image below
 
 ### conclusion
 Conclusion:
-The objective of this lab, to model a d-flipflop with more deatils was met.
+The objective of this lab, to model a 4 bit PISO shift register using D-flipflops and other gates.
 
