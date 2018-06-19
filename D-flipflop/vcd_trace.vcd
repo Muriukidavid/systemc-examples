@@ -1,0 +1,44 @@
+$date
+     Jun 17, 2018       15:07:01
+$end
+
+$version
+ SystemC 2.3.2-Accellera --- May  7 2018 21:50:58
+$end
+
+$timescale
+     100 ps
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  binary_input_for_port_din       $end
+$var wire    1  aaaab  binary_output_for_port_dout       $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+1aaaaa
+1aaaab
+$end
+
+#50
+0aaaaa
+0aaaab
+
+#100
+1aaaaa
+1aaaab
+
+#150
+0aaaaa
+0aaaab
+
+#200
+1aaaaa
+1aaaab
+
+#250
