@@ -28,8 +28,8 @@ int sc_main(int argc, char* argv[])
 	sc_trace(fp, s_din, "binary_input_for_port_din"); // signals to be traced
 	sc_trace(fp, s_dout, "binary_output_for_port_dout");
 
-	if( !sc_pending_activity() )
-	sc_start(25, SC_NS);
+	//if( !sc_pending_activity() )
+	sc_start(20, SC_NS);
 	sc_close_vcd_trace_file(fp);
 	//tracefile->set_time_unit(0.000000000001, sc_time_unit);
 	return 0;
