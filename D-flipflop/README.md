@@ -1,3 +1,5 @@
+ABALLA SAMUEL OTIENO
+I39/2498/2016
 ### THE D-FLIP-FLOP:
 
 A D-Flipflop, also known as a "data" or "delay" flip-flop captures the value of the D-input at a definite portion of the clock cycle (such as the rising edge of the clock).<br> That captured value becomes the Q output. At other times, the output Q does not change.<br> The D flip-flop can be viewed as a memory cell, a zero-order hold, or a delay line.<br>
