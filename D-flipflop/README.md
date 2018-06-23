@@ -27,16 +27,16 @@ A Model of computation for the D_Flipflop is as shown below:
 
 <p>A shift register (Serial-In Parallel-Out type) consists of a group of flip-flops arranged such that the output of one feeds the input of the next such that the binary numbers stored, shift from one flip-flop to the next controlled by a clock pulse. For a 4-bit shift register utilising the d-type flip-flops, the clock inputs of all the flip-flops connect to a common line, hence they receive clock inputs simultaneously. With a d-type flip-flop, the value at the input D transfers to the output Q on the rising edge of every clock pulse. Since they all receive the clock pulse simultaneously, they all do this operation together on the rising edge.</p>
 
-Below is an implemantation of a 4-bit shift register<br>
+Below is an implemantation of a 4-bit shift register
 
 <p align="left">
-  <img src="images/SIPO_4_bit_shift_reg.gif" width="500"/>
+  <img src="images/SIPO_4-bit_shift_reg.gif" width="450"/>
 </p>
 
 A truth table representing a 4-bit shift register is as shown below
 
 <p align="left">
-  <img src="images/4bit_truth_table" width="500"/>
+  <img src="images/4bit_truth_table.png" width="400"/>
 </p>
 
 ### Results:
