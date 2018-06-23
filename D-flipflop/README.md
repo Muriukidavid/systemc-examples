@@ -60,9 +60,9 @@ It is also used to introduce the delay in the circuits.
 A D-Flipflop was thus implemented using four instances of a NAND gate and an instance of a NOT gate.<br>
 
 On the other hand, registers are used in digital electronic devices like computers as;
-Temporary data storage
-Data transfer
-Data manipulation
+Temporary data storage<br>
+Data transfer<br>
+Data manipulation<br>
 As counters.<br>
 
 The main application of Serial in Parallel Out(SIPO) shift register is to convert serial data into parallel data. Hence they are used in communication lines where demultiplexing of a data line into several parallel line is required.
