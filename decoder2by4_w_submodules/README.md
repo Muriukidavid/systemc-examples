@@ -11,12 +11,19 @@ In the following truth table, only the output D0 is high when the input is zero,
 Only one signal is high(selected) when the right binary number is available on the input. <br>
 Its truth table: 
 <p align="left">
-  <img src="images/truth_table.jpg" width="250"/>
+  <img src="images/truth_table.png" width="250"/>
 </p>
 
 ### Circuit:
 <p align="left">
   <img src="images/circuit.gif" width="200"/>
+</p>
+In the following truth table, only the output: D0 is high when both the input are zero, D1 is high when the input is 0 and
+1, D2 is high when the input is 1 and 0 and D3 is high when both the input are one. It decodes a double digit binary number.
+Only one signal is high(selected) when the right binary numbers are available on the input. <br>
+Its truth table: 
+<p align="left">
+  <img src="images/truthtable.jpg" width="250"/>
 </p>
 
 ### Model of computation:
@@ -30,11 +37,6 @@ Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram.png" width="400"/>
 <p>
-
-<p align="left">
-  <img src="images/run.png" width="400"/>
-<p>
-
 Conclusion
 An abstract representation of a 2by4 decoder can be further broken down into two 1by2 decoders whose outputs are <br>
 connected to four andgates
