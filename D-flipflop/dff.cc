@@ -2,6 +2,7 @@
 
 void dff:: dff_method (void){
 	dout=din;
+    
 }
 
 dff:: ~dff(){

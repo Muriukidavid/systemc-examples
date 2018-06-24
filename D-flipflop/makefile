@@ -1,5 +1,4 @@
-GTKWAVE:=$(shell which gtkwave)
-
+GTKWAVE:=$(which gtkwave)
 all: dff
 
 dff:
@@ -8,6 +7,14 @@ dff:
 	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "dff" dff.o driver.o monitor.o NAND.o main.o -lsystemc
 	./dff
 	gtkwave -c 4 vcd_trace.vcd
+
+	
+prerequisites: 
+ifneq  ('$(GTKWAVE)', "/usr/bin/gtkwave")
+	@echo 'installing gtkwave, please be patient'
+	sudo apt-get install -y gtkwave
+endif
+
 
 clean:
 	rm -f dff *.o vcd_trace.vcd

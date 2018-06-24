@@ -22,6 +22,7 @@ SC_MODULE (dff) {
 		           nand3("Instance3"),
 		           nand4("Instance4"),
 		           notgt("not gate instance")
+                   
                    {
 
 		notgt.not_a(din);

@@ -12,7 +12,8 @@ void NANDGATE_method();
 SC_CTOR (NANDGATE){
 	SC_METHOD (NANDGATE_method);
 	sensitive <<a<<b;
-};
 
+    
+};
 
 };
