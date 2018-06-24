@@ -1,7 +1,8 @@
 #include "dff.h"
 
 void dff:: dff_method (void){
-	dout=din;
+	s_in=din;
+	//dout=din;
 }
 
 dff:: ~dff(){
