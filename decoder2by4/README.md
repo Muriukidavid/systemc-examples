@@ -18,6 +18,13 @@ Its truth table:
 <p align="left">
   <img src="images/circuit.gif" width="200"/>
 </p>
+In the following truth table, only the output: D0 is high when both the input are zero, D1 is high when the input is 0 and
+1, D2 is high when the input is 1 and 0 and D3 is high when both the input are one. It decodes a double digit binary number.
+Only one signal is high(selected) when the right binary numbers are available on the input. <br>
+Its truth table: 
+<p align="left">
+  <img src="images/truthtable.jpg" width="250"/>
+</p>
 
 ### Model of computation:
 <p align="left">
@@ -30,8 +37,8 @@ Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram.png" width="400"/>
 <p>
+Conclusion
+An abstract representation of a 2by4 decoder can be further broken down into two 1by2 decoders whose outputs are <br>
+connected to four andgates
 
-### Tutorial 1:
-Create a decoder_2by4 based on this decoder_1by2.<br>
-Reuse the systemc module for decoder_1by2 cascaded to build a more complex module for the decoder_2by4.
-<em>Hint:</em> use additional and logic (AND) gates to determine the final outputs as in the truth table.
+
