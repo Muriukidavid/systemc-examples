@@ -7,14 +7,21 @@
 
 #ifndef DECODER_1BY2_H_
 #define DECODER_1BY2_H_
+#include "inverter.h"
 #include<systemc.h>
 
 SC_MODULE(decoder){
 //input and output ports
 sc_in<bool> a;
 sc_out<bool> b,c;
+
+notgate inv;
 //constructor: where the processes are bound to simulation kernel
-SC_CTOR(decoder){
+SC_CTOR(decoder):inv("inverter_instance"){
+
+	inv.d(a);
+	inv.f(b);
+
 	SC_METHOD(decode);
 	sensitive<<a;
 	//dont_initialize();
@@ -25,12 +32,7 @@ SC_CTOR(decoder){
 }
 
 void decode(void){
-	b=(a==0)?1:0;
-	c=(a==1)?1:0;
+	c = a;
 }
 };
-
-
-
-
 #endif /* DECODER_2BY4_H_ */
