@@ -5,6 +5,6 @@ void driver::drive(void){
 		d_din = 1;
 		wait(5,SC_NS);
 		d_din = 0;
-		wait(5,SC_NS);
+		wait(15,SC_NS);
 	}
 }
