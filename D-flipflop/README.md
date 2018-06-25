@@ -45,6 +45,6 @@ The 4-bit shift register representation
 
 The timming diagram of the 4-bit shift register is as follows:
 <p align="left">
-  <img src="img/shifttt.png" width="320"/>
+  <img src="img/shifttd.png" width="320"/>
 </p>
 
