@@ -11,7 +11,7 @@ The D flip-flop modelled in here is triggered by the positive edge of the clock.
 ### Truth Table 
 The truth table of a d flip-flop is as follows<br>
 <p align="left">
-  <img src="img/dffttable.png" width="320"/>
+  <img src="img/dfftd.png" width="320"/>
 </p>
 
 ### model of computation of a d flip flop
