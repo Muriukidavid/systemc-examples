@@ -1,7 +1,7 @@
 #include<systemc.h>
 
 SC_MODULE(monitor){
-	sc_in<bool> m_din, m_dout;
+	sc_in<bool> m_din, m_dout, m_1, m_2, m_3;
 	
 	void mon(void);
 	
