@@ -1,7 +1,7 @@
 ### The D Flip-flop
 
 The D flip-flop is a Bi-stable latch that uses the clock signal as the control signal.<br>
-The D flip-flop modelled here is sensitive to the positive/ rising edge of the clock.<b>
+The D flip-flop modelled here is sensitive to the positive/ rising edge of the clock.<br>
 The input will be transmitted to the output of the flip-flop everytime the clock is at the rising edge.<br>
 
 ### D Flip-Flop
@@ -9,7 +9,7 @@ The input will be transmitted to the output of the flip-flop everytime the clock
   <img src="img/dff.png" width="250"/>
 </p>
 
-### Truth Table 
+### Truth Table
 <p align="left">
   <img src="img/truthtable.png" width="250"/>
 </p>
@@ -41,7 +41,7 @@ Below is the depiction of the four bit register.
   <img src="img/SIPO_4-bit_shift_reg.gif" width="250"/>
 </p>
 
-Below is the timing diagram of the 4 bit shift register. 
+Below is the timing diagram of the 4 bit shift register.
 <p align="left">
   <img src="img/timingdiagramsr.png" width="250"/>
 </p>
