@@ -15,12 +15,12 @@ int sc_main(int argc, char* argv[])
 	dr.d_din(s_din);
 	dff1.din(s_din);
 	mon.m_din(s_din);
-	
+
 	dff1.dout(s_dout);
 	mon.m_dout(s_dout);
-	
+
 	dff1.clk(clock);
-	
+
 	sc_trace_file *fp;
 	fp=sc_create_vcd_trace_file("vcd_trace");
 	fp->set_time_unit(1, SC_NS);

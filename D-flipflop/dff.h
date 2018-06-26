@@ -46,5 +46,4 @@ SC_MODULE (dff) {
 
 		SC_METHOD (dff_method);
 			sensitive << clk.pos();
-	}
 };
