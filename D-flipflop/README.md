@@ -41,10 +41,15 @@ Below is the depiction of the four bit register.
 
 
 </p>
-### Timing Diagram
+### Timing Diagram for D flipflop
 the final output on the timing diagram.
 <p align="left">
   <img src="images/output.png" width="300"/>
 </p>
 
+### Timing Diagram for 4bit register
+the final output on the timing diagram.
+<p align="left">
+  <img src="images/output4bit.png" width="300"/>
+</p>
 
