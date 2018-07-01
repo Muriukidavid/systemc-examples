@@ -7,30 +7,38 @@
 
 #ifndef DECODER_1BY2_H_
 #define DECODER_1BY2_H_
+#include"NotGate.h"
 #include<systemc.h>
 
-SC_MODULE(decoder){
-//input and output ports
-sc_in<bool> a;
-sc_out<bool> b,c;
-//constructor: where the processes are bound to simulation kernel
-SC_CTOR(decoder){
+	SC_MODULE(decoder){
+	//input and output ports
+	sc_in<bool> a;
+	sc_out<bool> b,c;
+
+	notgate notgt_1;
+
+	//constructor: where the processes are bound to simulation kernel
+
+	SC_CTOR(decoder):notgt_1("notgate_instance_1"){
+	//sig1
+	notgt_1.o(a);
+	//sig2
+	notgt_1.p(b);
+
 	SC_METHOD(decode);
 	sensitive<<a;
 	//dont_initialize();
-}
+	}
 
-~decoder(){
-//delete stuff :P
-}
+	~decoder(){
+	//delete stuff :P
+	}
 
 void decode(void){
-	b=(a==0)?1:0;
-	c=(a==1)?1:0;
+	c = a;
 }
+
 };
-
-
 
 
 #endif /* DECODER_2BY4_H_ */
