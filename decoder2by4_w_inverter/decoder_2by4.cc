@@ -30,13 +30,13 @@ mn.m_n(in_n);
 dec2by4.n(in_n);
 
 dec2by4.q(out_q);
-mn.m_q(dec2by4.q);
+mn.m_q(out_q);
 dec2by4.r(out_r);
-mn.m_r(dec2by4.r);
+mn.m_r(out_r);
 dec2by4.s(out_s);
-mn.m_s(dec2by4.s);
+mn.m_s(out_s);
 dec2by4.t(out_t);
-mn.m_t(dec2by4.t);
+mn.m_t(out_t);
 
 //create a trace file with nanosecond resolution
 sc_trace_file *tf;
