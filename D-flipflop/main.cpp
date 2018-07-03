@@ -3,6 +3,8 @@
 #include "driver.h"
 #include "monitor.h"
 
+
+
 int sc_main(int argc, char* argv[])
 {
 	sc_signal<bool> s_din, s_dout;

@@ -9,5 +9,6 @@ SC_MODULE(monitor){
 		SC_METHOD(mon);
 		sensitive<<m_din<<m_dout;
 		dont_initialize();
+        
 	}
 };

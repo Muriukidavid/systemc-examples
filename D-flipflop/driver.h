@@ -8,4 +8,5 @@ SC_MODULE(driver){
 	SC_CTOR(driver){
 		SC_THREAD(drive);
 	}
+	
 };
