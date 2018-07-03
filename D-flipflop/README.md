@@ -33,8 +33,8 @@ The image below illustrates the process.<br>
 </p>
 
 ### Four bit shift register
-Shift Registers can be used to transfer data. They can also be used to swith between serial and parallel data .<br>
-The data that at the input of the flip-flop is pushed to the next flip-flop's input on every clock cycle, the output of one flip-flop feeds the input of the following flip-flop.<br>
+Shift Registers can be used to transfer data. They can also be used to switch between serial and parallel data .<br>
+The data that at the input of the flip-flop is pushed to the next flip-flop's output on every clock cycle, the output of one flip-flop feeds the input of the following flip-flop.<br>
 All of the flip-flops are driven by a single clock to syncronize them.
 <br>
 
