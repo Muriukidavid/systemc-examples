@@ -36,3 +36,6 @@
 
 # Project files
 .project
+
+
+*.vcd
