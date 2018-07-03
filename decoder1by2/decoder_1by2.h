@@ -9,28 +9,34 @@
 #define DECODER_1BY2_H_
 #include<systemc.h>
 
-SC_MODULE(decoder){
+#include "not_gate.h"
+
+SC_MODULE(decoder) {
 //input and output ports
-sc_in<bool> a;
-sc_out<bool> b,c;
+	sc_in<bool> a;
+	sc_out<bool> b, c;
+
+	not_gate *not_gate_1;
+
 //constructor: where the processes are bound to simulation kernel
-SC_CTOR(decoder){
-	SC_METHOD(decode);
-	sensitive<<a;
-	//dont_initialize();
-}
+	SC_CTOR(decoder) {
+		not_gate_1 = new not_gate("not_gate_1");
 
-~decoder(){
+		not_gate_1->a(a);
+		not_gate_1->b(b);
+
+		SC_METHOD (decode);
+		sensitive<<a;
+		//dont_initialize();
+	}
+
+	~decoder() {
 //delete stuff :P
-}
+	}
 
-void decode(void){
-	b=(a==0)?1:0;
-	c=(a==1)?1:0;
-}
+	void decode(void) {
+		c = a;
+	}
 };
-
-
-
 
 #endif /* DECODER_2BY4_H_ */
