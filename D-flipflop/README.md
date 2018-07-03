@@ -5,29 +5,29 @@ The D flip-flop modelled in here is triggered by the positive edge of the clock.
 
 ### D Flip-Flop
 <p align="left">
-  <img src="img/dff.png" width="250"/>
+  <img src="images/dff.png" width="250"/>
 </p>
 
 ### Truth Table 
 The truth table of a d flip-flop is as follows<br>
 <p align="left">
-  <img src="img/dfftt.png" width="250"/>
+  <img src="images/tt.png" width="250"/>
 </p>
 
 ### Model of Computation
 <p align="left">
-  <img src="img/moc.png" width="250"/>
+  <img src="images/moc.png" width="250"/>
 </p>
 
 ### Timing Diagram
 <p align="left">
-  <img src="img/trace_diagram.png" width="250"/>
+  <img src="images/trace_diagram.png" width="250"/>
 </p>
 
 ### Detailed D Flip-flop
 The D Flip-flop is made of a combination of logic gates. One of the combinations is the use of four Nand Gates and a Not Gate. The connections of the gates is as shown in the image below.<br>
 <p align="left">
-  <img src="img/gates.png" width="250"/>
+  <img src="images/gates.png" width="250"/>
 </p>
 
 ### Four bit shift register
@@ -40,11 +40,11 @@ The number of latches in a bit shift register depend on the number of bits to be
 
 The 4 bit shift register looks as shown below
 <p align="left">
-  <img src="img/SIPO_4-bit_shift_reg.gif" width="250"/>
+  <img src="images/SIPO_4-bit_shift_reg.gif" width="250"/>
 </p>
 
 The timming diagram of the 4 bit shift register is as follows
 <p align="left">
-  <img src="img/shift.png" width="250"/>
+  <img src="images/shift.png" width="250"/>
 </p>
 
