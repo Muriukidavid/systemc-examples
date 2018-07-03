@@ -15,13 +15,15 @@ The truth table of a d flip-flop is as follows<br>
 </p>
 
 ### Model of Computation
+Model of Computation used to develop the D flip-flop:
 <p align="left">
   <img src="img/dffmoc.png" width="250"/>
 </p>
 
 ### Timing Diagram
+The timming diagram of the Dff is as follows
 <p align="left">
-  <img src="img/dfftracediagram.png" width="250"/>
+  <img src="img/DffTimingdiagram.png" width="250"/>
 </p>
 
 ### Detailed D Flip-flop
@@ -31,11 +33,7 @@ The D Flip-flop is made of a combination of logic gates. One of the combinations
 </p>
 
 ### Four bit shift register
-The bit shift register moves data sequentially from intput to output once every clock cycle.
-A bit shift register consists of D Flip-flop connected together. 
-The output of one latch is connected to the input of the next latch.
-They are all driven by the same clock signal making them synchronous.
-They are used for storage or movement of data.
+A simple Shift Register can be made using only D-type flip-Flops, one flip-Flop for each data bit. The output from each flip-Flop is connected to the D input of the flip-flop at its right. Shift registers hold the data in their memory which is moved or “shifted” to their required positions on each clock pulse.
 The number of latches in a bit shift register depend on the number of bits to be stored.<br>
 
 The 4 bit shift register looks as shown below
@@ -43,8 +41,13 @@ The 4 bit shift register looks as shown below
   <img src="img/SIPO_4-bit_shift_reg.gif" width="250"/>
 </p>
 
+Model of Computation used to develop the shift register:
+<p align="left">
+  <img src="img/fourBSR.png" width="250"/>
+</p>
+
 The timming diagram of the 4 bit shift register is as follows
 <p align="left">
-  <img src="img/shifttt.png" width="250"/>
+  <img src="img/fourbitShiftRegTimingDiagram.png" width="250"/>
 </p>
 

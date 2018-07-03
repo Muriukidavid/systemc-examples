@@ -1,5 +1,5 @@
 $date
-     Jul 03, 2018       00:23:23
+     Jul 03, 2018       18:10:33
 $end
 
 $version
@@ -7,13 +7,16 @@ $version
 $end
 
 $timescale
-     100 ps
+     1 ns
 $end
 
 $scope module SystemC $end
 $var wire    1  aaaaa  D       $end
 $var wire    1  aaaab  CLK       $end
 $var wire    1  aaaac  Q1       $end
+$var wire    1  aaaad  Q2       $end
+$var wire    1  aaaae  Q3       $end
+$var wire    1  aaaaf  Q4       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -22,100 +25,144 @@ All initial values are dumped below at time 0 sec = 0 timescale units.
 $end
 
 $dumpvars
-1aaaaa
+0aaaaa
 1aaaab
-1aaaac
+0aaaac
+0aaaad
+0aaaae
+0aaaaf
 $end
 
-#25
+#0
 0aaaab
 
-#50
-0aaaaa
+#1
 1aaaab
-0aaaac
 
-#75
+#1
 0aaaab
 
-#100
+#2
+1aaaab
+
+#2
+0aaaab
+
+#3
+1aaaab
+
+#3
+0aaaab
+
+#4
+1aaaab
+
+#4
+0aaaab
+
+#5
 1aaaaa
 1aaaab
 1aaaac
+1aaaad
+1aaaae
+1aaaaf
 
-#125
+#5
 0aaaab
 
-#150
+#6
+1aaaab
+
+#6
+0aaaab
+
+#7
+1aaaab
+
+#7
+0aaaab
+
+#8
+1aaaab
+
+#8
+0aaaab
+
+#9
+1aaaab
+
+#9
+0aaaab
+
+#10
 0aaaaa
 1aaaab
 0aaaac
+0aaaad
+0aaaae
+0aaaaf
 
-#175
+#10
 0aaaab
 
-#200
+#11
+1aaaab
+
+#11
+0aaaab
+
+#12
+1aaaab
+
+#12
+0aaaab
+
+#13
+1aaaab
+
+#13
+0aaaab
+
+#14
+1aaaab
+
+#14
+0aaaab
+
+#15
 1aaaaa
 1aaaab
 1aaaac
+1aaaad
+1aaaae
+1aaaaf
 
-#225
+#15
 0aaaab
 
-#250
-0aaaaa
+#16
 1aaaab
-0aaaac
 
-#275
+#16
 0aaaab
 
-#300
-1aaaaa
+#17
 1aaaab
-1aaaac
 
-#325
+#17
 0aaaab
 
-#350
-0aaaaa
+#18
 1aaaab
-0aaaac
 
-#375
+#18
 0aaaab
 
-#400
-1aaaaa
+#19
 1aaaab
-1aaaac
 
-#425
+#19
 0aaaab
 
-#450
-0aaaaa
-1aaaab
-0aaaac
-
-#475
-0aaaab
-
-#500
-1aaaaa
-1aaaab
-1aaaac
-
-#525
-0aaaab
-
-#550
-0aaaaa
-1aaaab
-0aaaac
-
-#575
-0aaaab
-
-#600
+#20

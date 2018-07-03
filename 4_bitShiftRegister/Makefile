@@ -9,8 +9,9 @@ dflipflop:prerequisites
 	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c inverter.cc
 	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c nandgate.cc
 	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c monitor.cc
+	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c four_bitshiftreg.cc
 	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c main.cpp
-	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "dflipflop" main.o monitor.o dff.o inverter.o nandgate.o driver.o -lsystemc
+	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "dflipflop" main.o monitor.o four_bitshiftreg.o dff.o inverter.o nandgate.o driver.o -lsystemc
 	./dflipflop
 	gtkwave -c 4 vcd_trace.vcd
 
