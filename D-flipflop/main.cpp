@@ -26,6 +26,8 @@ int sc_main(int argc, char* argv[])
 	sc_trace_file *fp;
 	fp=sc_create_vcd_trace_file("vcd_trace");
 	fp->set_time_unit(1, SC_NS);
+    sc_trace(fp, s_din, "Input_Signal");
+    sc_trace(fp, s_dout, "Output_Signal");
 	sc_start(20, SC_NS);
 	sc_close_vcd_trace_file(fp);
 	return 0;
