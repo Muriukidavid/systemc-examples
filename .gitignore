@@ -33,3 +33,6 @@
 
 # Backup files
 *~
+
+# Project files
+.project
