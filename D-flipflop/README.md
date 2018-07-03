@@ -37,4 +37,4 @@ https://github.com/Muriukidavid/systemc-examples
 ```
 
 ### Conclusions
-The desired output was visualized on the program, gtkwave. This is an indicator that the program indeed does work. 
+The desired output was visualized on the program, gtkwave. This is an indicator that the implementation of the D-flipflop indeed does work. 
