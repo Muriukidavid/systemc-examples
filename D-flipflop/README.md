@@ -6,6 +6,20 @@ It has two outputs where one is an inverse of the other and the input are either
 The abstract implementation is made from a provided code base. What was added was the extra functionality for the design.
 NAND gates were used where among the first sets was an inverter.
 Signals were connected between all the four instances of NAND gates that were created. The output was routed to the monitor as well as the inputs in order to compare the two.
+The flip-flop will store and output the logic value applied to its data terminal while the clock input is HIGH. Once the clock input goes LOW the “set” and “reset” inputs of the flip-flop are both held at logic level “1” so it will not change state.
+
+### Project overview
+## Appearence
+
+<p align="left">
+  <img src="IMAGES/DFFimage.png" width="240"/>
+</p>
+
+## Module of computation
+<p align="left">
+  <img src="IMAGES/DFF_MOC.png" width="240"/>
+</p>
+
 
 ### Requirements
 This project was made using the systemc c++ library. The library is required to implement the functionality of the code or even change it. 
