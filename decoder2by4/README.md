@@ -32,7 +32,7 @@ The inner workings of the decoder 2 by 4 can be broken down as shown in the figu
 
 ### Results:
 The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
-Traced signals timing diagram:
+Traced signals timing diagram::
 <p align="left">
   <img src="images/GTKWave.png" width="400"/>
 <p>
