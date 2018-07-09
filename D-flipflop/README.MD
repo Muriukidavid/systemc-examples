@@ -20,7 +20,7 @@ The timing diagram of the above register is as shown below
 The MOC of the lab is as shown below
 
 <p align="left">
-  <img src="images/moc.jpg" width="250"/>
+  <img src="image/moc.jpg" width="250"/>
 </p>
 
 ### The Truth table
