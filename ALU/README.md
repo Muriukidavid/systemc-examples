@@ -1,3 +1,9 @@
+### CONTRIBUTORS
+1.I39/2486/2016 - Stephen Odhiambo - Research<br>
+2.I39/1383/2015 - Ruth Mbugua - Research<br>
+3.I39/2485/2016 - Hudson Lundi - Coding<br>
+4.I39/2495/2016 - Evans Shango - Testing and Debugging<br>
+5.I39/2499/2016 - Bliss Maake - Report<br><br>
 This is an ALU, which is a makefile project and so no need for an IDE. 
 Just cd into the folder and run the command 'make'.<br><br>
 
@@ -52,5 +58,6 @@ Traced signals timing diagram:
 <p>
 
 ### CONCLUSION
-The 4-bit ALU with functionalities mentioned in the OPCODE was implemented successfully.
+An arithmetic logic unit (ALU) is a digital circuit used to perform arithmetic and logic operations. It represents the fundamental building block of the central processing unit (CPU) of a computer.<br>
 
+The purpose of the ALU is to perform mathematical operations such as addition, subtraction, multiplication and division. Additionally, the ALU processes basic logical operations like AND/OR calculations. Also known as the arithmetic logic unit, it serves as the computational hub of the Central Processing Unit (CPU) for a computer system
