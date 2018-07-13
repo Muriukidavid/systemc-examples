@@ -64,7 +64,7 @@ The ALU was implemented in systemc and the following output found from traced si
 
 Traced signals timing diagram:
 <p align="left">
-  <img src="images/vcd_timing_diagram.png" height="400"/>
+  <img src="images/vcd_trace_diagram.png" height="400"/>
 <p>
 
 ### CONCLUSION
