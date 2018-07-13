@@ -42,12 +42,12 @@ Modeling of the D flip-flop was completed succesfully.<br><br>
 ### Timing Diagrams
 Below is the timing diagram of a D flip-flop.
 <p align="left">
-  <img src="img/timingdiagram.png" width="250"/>
+  <img src="img/timingdiagram.png" width="500"/>
 </p>
 
 Below is the timing diagram of the 4 bit shift register. 
 <p align="left">
-  <img src="img/timingdiagramsr.png" width="250"/>
+  <img src="img/timingdiagramsr.png" width="500"/>
 </p>
 
 ### Conlclusion
