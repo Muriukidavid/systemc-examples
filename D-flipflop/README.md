@@ -11,7 +11,7 @@ The D flip-flop modelled in here is triggered by the positive edge of the clock.
 ### Truth Table 
 The truth table of a d flip-flop is as follows<br>
 <p align="left">
-  <img src="img/dfftt.png" width="250"/>
+  <img src="img/Dflip-flop.png" width="250"/>
 </p>
 
 ### Model of Computation
@@ -19,9 +19,9 @@ The truth table of a d flip-flop is as follows<br>
   <img src="img/dffmoc.png" width="250"/>
 </p>
 
-### Timing Diagram
+###Timing Diagram
 <p align="left">
-  <img src="img/dfftracediagram.png" width="250"/>
+  <img src="img/dfftracediagram.png"/>
 </p>
 
 ### Detailed D Flip-flop
@@ -29,7 +29,7 @@ They are used for storage or movement of data.The D Flip Flop is by far the most
 The D-type flip-flop is a modified Set-Reset flip-flop with the addition of an inverter to prevent the S and R inputs from being at the same logic level.
 The D Flip-flop is made of a combination of logic gates. One of the combinations is the use of four Nand Gates and a Not Gate. The connections of the gates is as shown in the image below.<br>
 <p align="left">
-  <img src="img/dffgates.png" width="250"/>
+  <img src="img/D-type-flip-flop-circuit.gif" width="250"/>
 </p>
 
 ### Four bit shift register
