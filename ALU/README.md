@@ -1,9 +1,9 @@
 ### CONTRIBUTORS
-1.I39/2486/2016 - Stephen Odhiambo - Research 
-2.I39/1383/2015 - Ruth Mbugua - Research 
-3.I39/2485/2016 - Hudson Lundi - Coding
-4.I39/2495/2016 - Evans Shango - Testing and Debugging 
-5.I39/2499/2016 - Bliss Maake - Report
+1.I39/2486/2016 - Stephen Odhiambo - Research<br>
+2.I39/1383/2015 - Ruth Mbugua - Research<br>
+3.I39/2485/2016 - Hudson Lundi - Coding<br>
+4.I39/2495/2016 - Evans Shango - Testing and Debugging<br> 
+5.I39/2499/2016 - Bliss Maake - Report<br><br>
 
 
 This is an ALU, which is a makefile project and so no need for an IDE. 
