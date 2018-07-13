@@ -1,13 +1,12 @@
 #include <systemc.h>
-#include "dff.h"
 #include "driver.h"
 #include "monitor.h"
 #include "shiftreg.h"
 
 int sc_main(int argc, char* argv[])
 {
-	sc_signal<bool> s_din,sDin, s_QD,s_QA,s_QB,s_QC;
-	sc_clock clock("clk",5,SC_NS,0.5);
+	sc_signal<bool> s_din,sDin, s_QD,s_QA,s_QB,s_QC,clear;
+	sc_clock clock("clk",10,SC_NS,0.5,false);
 
 	shiftreg shiftreg1("shiftreg");
 	driver dr("driver");
@@ -31,6 +30,7 @@ int sc_main(int argc, char* argv[])
 	mon.m_QD(s_QD);
 	
 	shiftreg1.clk(clock);
+	shiftreg1.clr(clear);
 	
 	
 	sc_trace_file *fp;
@@ -39,6 +39,7 @@ int sc_main(int argc, char* argv[])
 	
 	sc_trace(fp, s_din, "D");
 	sc_trace(fp, clock, "CLK");
+		sc_trace(fp, clear, "CLR");
 	sc_trace(fp, s_QA, "QA");
 	sc_trace(fp, s_QB, "QB");
 	sc_trace(fp, s_QC, "QC");

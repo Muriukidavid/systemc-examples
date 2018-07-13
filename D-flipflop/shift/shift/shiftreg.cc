@@ -2,12 +2,13 @@
 
 
 void shiftreg:: shiftreg_method (void){
-	sDin=din;
+		if(clr){
+	QD = 0;
+	}else
+	{
+	QD = DFFD.dout;
 }
+	}
 
-shiftreg:: ~shiftreg(){
-	    delete DFFA;
-		delete DFFB;
-		delete DFFC;
-		delete DFFD;	
-}
+
+

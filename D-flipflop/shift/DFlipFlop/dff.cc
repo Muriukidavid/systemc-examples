@@ -5,6 +5,6 @@ void dff:: dff_method (void){
 	dout = 0;
 	}else
 	{
-	dout = n3.A;
+	dout = n3.F;
 }
 	}

@@ -12,29 +12,29 @@ SC_MODULE (dff) {
 	
 	not_gate ng;
 
-  	sc_signal<bool>  S1, S2, S3 , S4 ,S5;
+  	sc_signal<bool>  s_ng_n2,S1, S2, S3 , S4 ;
 	SC_CTOR(dff) :	n1("N1"),n2("N2"),n3("N3"),n4("N4"),ng("NG") {
 		//port 
 	    ng.in(din);
 	    n1.A(din);
 	    //S1
-		ng.out(S1);
-		n2.A(S1);
+		ng.out(s_ng_n2);
+		n2.A(s_ng_n2);
 		//CLK
 		n1.B(clk);
 		n2.B(clk);
 		//S2
-		n1.F(S2);
-		n4.A(S2);
+		n1.F(S1);
+		n3.A(S1);
 		//S3
-		n2.F(S3);
-		n3.B(S3);
+		n2.F(S2);
+		n4.B(S2);
 		//S4
-		n4.B(S4);
-		n3.F(S4);
+		n4.A(S3);
+		n3.F(S3);
 		//port
-		n4.F(S5);
-		n3.B(S5);
+		n4.F(S4);
+		n3.B(S4);
 		
 		
 		

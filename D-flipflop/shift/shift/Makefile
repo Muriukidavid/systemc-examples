@@ -1,13 +1,32 @@
 GTKWAVE:= which gtkwave
+TARGET := shift
+CXX := g++
+LD := $(CXX) 
+C_FLAGS := -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c
+LD_OPTIONS = -L/usr/local/systemc-2.3.2/lib-linux64 -o $(TARGET)
+LIBS := -lsystemc
+C_SOURCES = $(shell ls *.cc)
+C_SOURCES += ../nand/nand.cc
+C_SOURCES += ../not/notgate.cc
+C_SOURCES += ../DFlipFlop/dff.cc
+C_OBJS := $(patsubst %.cc, %.o, $(C_SOURCES))
 
-all: clean shift 
+%.o:%.cc
+	@echo 'Building file: $(@F)'
+	@echo '--------------------'
+	@echo 'Invoking: GNU CPP Compiler'
+	echo $(C_FLAGS)
+	$(CXX) $(C_FLAGS) $< -o $@
+	@echo 'Finished building: $(@F)'
+	@echo ' '
 
-shift:
-	@echo 'building file $(@F)'
-	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c dff.cc driver.cc monitor.cc nand.cc shiftreg.cc notgate.cc main.cpp
-	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "shift" dff.o driver.o monitor.o nand.o notgate.o main.o shiftreg.o  -lsystemc
-	./shift
-	gtkwave -c 4 vcd_trace.vcd
+all:$(TARGET) 
+
+$(TARGET): $(C_OBJS)
+	#echo $(C_SOURCES)
+	#echo $(C_OBJS)
+	@echo 'building binary $(@F)'
+	$(LD) $(LD_OPTIONS) $(C_OBJS) $(LIBS)
 
 prerequisites: 
 ifneq ('$(GTKWAVE)', "/usr/bin/gtkwave")
@@ -16,6 +35,10 @@ ifneq ('$(GTKWAVE)', "/usr/bin/gtkwave")
 	sudo apt-get install -y gtkwave
 endif
 
+test:$(TARGET)
+	./$(TARGET) 
+	gtkwave -c 4 vcd_trace.vcd
+
 clean:
-	rm -f shift *.o vcd_trace.vcd
-.PHONY: shift
+	rm -f $(TARGET) *.o vcd_trace.vcd
+.PHONY: $(TARGET)
