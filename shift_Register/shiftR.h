@@ -17,7 +17,8 @@ SC_MODULE (shiftR){
     
         
     void shiftR_method (void);
-        
+    
+    //constructor created
     SC_CTOR (shiftR): ffA("flipflop Instance1"),
                       ffB("flipflop Instance2"),
                       ffC("flipflop Instance3"),
