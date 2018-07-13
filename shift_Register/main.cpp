@@ -1,25 +1,32 @@
 #include <systemc.h>
-#include "dff.h"
 #include "driver.h"
 #include "monitor.h"
+#include "shiftR.h"
 
 
 
 int sc_main(int argc, char* argv[])
 {
-	sc_signal<bool> s_din, s_dout;
+    sc_in <bool> reg_in;
+	sc_signal<bool> s_din, s_dout, QA, QB, QC, QD;
 	sc_clock clock("clk",5,SC_NS,0.5);
 
 	dff dff1("dff");
 	driver dr("driver");
 	monitor mon("monitor");
+    shiftR shiftReg("shift_register");
 
 	dr.d_din(s_din);
-	dff1.din(s_din);
+    dff1.din(s_din);
 	mon.m_din(s_din);
+    shiftReg.reg_in(s_din);
 	
 	dff1.dout(s_dout);
 	mon.m_dout(s_dout);
+    mon.m_A(QA);
+    mon.m_B(QB);
+    mon.m_C(QC);
+    mon.m_D(QD);
 	
 	dff1.clk(clock);
 	
