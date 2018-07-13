@@ -34,7 +34,37 @@ Traced signals timing diagram:
   <img src="img/dfftracediagram.png" width="250"/>
 </p>
 
-### CONCLUSION:
+### CONCLUSION
 The outcome result were achieved as expected.
 
+### Four bit shift register
+A Register is a digital circuit that both stores data and moves data. The term shift
+register is used to highlight that the register also moves data. Since a shift register
+stores data it implemented using flip-flops. The flip-flop operation required is that of a
+D-type flip flop.
+
+The bit shift register moves data sequentially from intput to output once every clock cycle.
+A bit shift register consists of D Flip-flop connected together. 
+The output of one latch is connected to the input of the next latch.
+They are all driven by the same clock signal making them synchronous.
+They are used for storage or movement of data.
+The operation of the Parallel-in Parallel-out shift register is straightforward. When a rising
+clock edge is detected the outputs become equal to the inputs, i.e.
+The number of latches in a bit shift register depend on the number of bits to be stored.<br>
+
+The 4 bit shift register looks as shown below
+<p align="left">
+  <img src="img/moc.gif" width="250"/>
+</p>
+
+### Results
+
+The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
+Traced signals timing diagram:
+<p align="left">
+  <img src="img/shifttt.png" width="250"/>
+</p>
+
+### CONCLUSION
+The outcome result were achieved as expected.
 
