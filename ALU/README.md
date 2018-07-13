@@ -22,7 +22,7 @@ The truth table of a 4Bit ALU is as follows<br>
 ### Model of Computation
 Model of Computation used to develop the ALU:
 <p align="left">
-  <img src="img/MoC.png" width="250"/>
+  <img src="img/MoC.jpg" width="250"/>
 </p>
 
 ### Timing Diagram
