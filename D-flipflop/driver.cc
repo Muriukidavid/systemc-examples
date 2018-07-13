@@ -7,4 +7,4 @@ void driver::drive(void){
 		d_din = 0;
 		wait(5,SC_NS);
 	}
-}
+};
