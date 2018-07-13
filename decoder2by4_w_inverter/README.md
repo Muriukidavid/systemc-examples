@@ -11,7 +11,7 @@ In the following truth table, only the output D0 is high when the input is zero,
 <p align="left">
   <img src="images/truth_table.png" width="250"/>
 </p>
-In the following truth table, only the output D0 is high when both the input is zero, and the output D1 is high when the input is 0 and 1, D2 is high when the input is 1 and 0 and D3 is high when both inputs are 1. it decodes a double digit binary number.
+In the following truth table, only the output D0 is high when both the inputs are zero, and the output D1 is high when the input is 0 and 1, D2 is high when the input is 1 and 0 and D3 is high when both inputs are 1. it decodes a double digit binary number.
 Only one signal is high(selected) when the right binary number is available on the input. <br>
 A two by four decoder truth table: 
 <p align="left">
