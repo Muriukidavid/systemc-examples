@@ -1,9 +1,9 @@
 ### The ALU
 Contributors: 
-Sarah Anyango		I39/2488/2016	Research
-Kibii Immanuela		I39/5521/2014	MoC
-Sarah Agatha		I39/37276/2016	Research
-Josphat Njoroge		I39/1387/2012	Code
+Sarah Anyango		I39/2488/2016	Research<br>
+Kibii Immanuela		I39/5521/2014	MoC<br>
+Sarah Agatha		I39/37276/2016	Code<br>
+Josphat Njoroge		I39/1387/2012	Research<br>
 
 An Arithmetic Logic Unit (ALU) is a combinational logic circuit that can perform different
 arithmetic and bit-wise logical operations on integer binary numbers. ALU is the fundamental
