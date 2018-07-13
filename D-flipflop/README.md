@@ -36,7 +36,7 @@ Below is the depiction of the four bit register.
   <img src="img/SIPO_4-bit_shift_reg.gif" width="250"/>
 </p>
 
-###Results
+### Results
 Modeling of the D flip-flop was completed succesfully.<br><br>
 
 ### Timing Diagrams
@@ -50,7 +50,7 @@ Below is the timing diagram of the 4 bit shift register.
   <img src="img/timingdiagramsr.png" width="250"/>
 </p>
 
-###Conlclusion
+### Conlclusion
 The D flip-flop can be used as a memory element as it stores the value at the input and transmits it to the output at during the rising edge of the clock. That is, it acts as a buffer.<br><br>
 
 A four bit shift register was modelled succesfully using system c. Four D flip-flops were used together to end up with a 4-bit shift register which can be used to convert serial data to parallel among other things.<br>
