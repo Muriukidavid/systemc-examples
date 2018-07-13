@@ -1,7 +1,7 @@
 ### The D Flip-flop
 
 The D flip-flop is a Bi-stable latch that uses the clock signal as the control signal.<br>
-The D flip-flop modelled here is sensitive to the positive/ rising edge of the clock.<b>
+The D flip-flop modelled here is sensitive to the positive/ rising edge of the clock.
 The input will be transmitted to the output of the flip-flop everytime the clock is at the rising edge.<br>
 
 ### D Flip-Flop
