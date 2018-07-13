@@ -1,5 +1,5 @@
 #include "systemc.h"
-SC_MODULE(nand2)          // declare nand2 sc_module
+SC_MODULE(nand)          // declare nand2 sc_module
 {
   sc_in<bool> A, B;       // input signal ports
   sc_out<bool> F;         // output signal ports
@@ -7,7 +7,7 @@ SC_MODULE(nand2)          // declare nand2 sc_module
   void gate(void);        // a C++ function
 	
 
-  SC_CTOR(nand2)          // constructor for nand2
+  SC_CTOR(nand)          // constructor for nand2
   {
     SC_METHOD(gate);  // register nand2 with kernel
     sensitive << A << B;  // sensitivity list

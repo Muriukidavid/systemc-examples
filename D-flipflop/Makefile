@@ -2,7 +2,7 @@ GTKWAVE:= which gtkwave
 
 all: dff
 
-dff:prerequisites
+dff:
 	@echo 'building file $(@F)'
 	$(CXX) -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c dff.cc driver.cc monitor.cc nand.cc notgate.cc main.cpp
 	$(CXX) -L/usr/local/systemc-2.3.2/lib-linux64 -o "dff" dff.o driver.o monitor.o nand.o notgate.o main.o -lsystemc
