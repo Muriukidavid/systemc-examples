@@ -1,3 +1,4 @@
+# Decoder 2 by 4
 This is a 2-by-4 decoder example, which is a makefile project and so no need for an IDE. 
 Just cd into this folder and run the command 
 
