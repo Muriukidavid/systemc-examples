@@ -1,9 +1,18 @@
 #include "dff.h"
 
 void dff:: dff_method (void){
-	dout=din;
+	if(clr==1){
+	
+	}
+	sig=din;
+	
 }
 
 dff:: ~dff(){
-	//delete gt1;
+	    delete n1;
+		delete n2;
+		delete n3;
+		delete n4;
+		delete ng;
+		
 }
