@@ -33,3 +33,9 @@
 
 # Backup files
 *~
+
+# Project files
+.project
+
+
+*.vcd
