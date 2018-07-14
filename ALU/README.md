@@ -1,4 +1,11 @@
 ### The ALU
+Contributors: <br>
+<p><b>Sarah Anyango	I39/2488/2016</b></p><br>
+<p><b>Kibii Immanuela 	I39/5521/2014</b></p><br>
+<p><b>Sarah Agatha 	I39/37276/2016</b></p><br>
+<p><b>Josphat Njoroge 	I39/1387/2012</b></p><br>
+
+
 An Arithmetic Logic Unit (ALU) is a combinational logic circuit that can perform different
 arithmetic and bit-wise logical operations on integer binary numbers. ALU is the fundamental
 building block of many computing circuits including Central Processing Units (CPUs).
