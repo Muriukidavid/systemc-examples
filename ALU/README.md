@@ -1,6 +1,6 @@
 ### The ALU
 Contributors: <br>
-Group 2
+Group 2<br>
 <b>Sarah Anyango        I39/2488/2016</b><br>
 <b>Kibii Immanuela      I39/5521/2014</b><br>
 <b>Sarah Agatha      I39/37276/2016</b><br>
