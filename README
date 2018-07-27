@@ -1,0 +1,28 @@
+A decoder is a device that receives input codes and changes it into a set of signals. A 2_by_4 decoder is 4 output logic circuit that takes in 2 inputs. At a given time-slice and according to the combination of the input signals, there can only be 1 output signal that is high (boolean value 1) and all the rest are low. This keeps alternating for the rest of the signals until the first signal is high again. 
+The decoder 2_by_4 was implemented in three stages. The first stage was to implement a generic 2_by_4 decoder from the 1_by_2 code base provided. The second stage involved adding more details in the decoder 2_by_4 creating two instances of the decoder 1_by_2, and implementing 4 AND gates.
+The final stage was to create a NOT gate inside the decoder 1_by_2, so that one value of the input would be a high signal and the other one a low signal.
+The Circuit:
+<p align="left">
+  <img src="images/circuit for decorder 2by4.jpg" width="200"/>
+</p>
+The truth table of the above circuit is as shown below:
+<p align="left">
+  <img src="images/truth_table.jpg" width="250"/>
+</p>
+
+The Model Of Computation is as shown below:
+<p align="left">
+  <img src="images/moc.jpg" width="400"/>
+</p>
+
+The Results:
+following output were found from traced signals.
+<p align="left">
+  <img src="images/timing Diagram.jpg" width="400"/>
+<p>
+
+
+Conclusion:
+The decoder 2_by_4 worked as expected. At a given time; there was one high signal for the input and one high signal for the output. This keeps on alternating in the entire simulation time.
+
+
