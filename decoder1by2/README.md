@@ -30,8 +30,3 @@ Traced signals timing diagram:
 <p align="left">
   <img src="images/timing_diagram.png" width="400"/>
 <p>
-
-### Tutorial 1:
-Create a decoder_2by4 based on this decoder_1by2.<br>
-Reuse the systemc module for decoder_1by2 cascaded to build a more complex module for the decoder_2by4.
-<em>Hint:</em> use additional and logic (AND) gates to determine the final outputs as in the truth table.

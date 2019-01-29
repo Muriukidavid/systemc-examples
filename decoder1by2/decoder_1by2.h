@@ -9,18 +9,18 @@
 #define DECODER_1BY2_H_
 #include<systemc.h>
 
-SC_MODULE(decoder){
+SC_MODULE(decoder1by2){
 //input and output ports
 sc_in<bool> a;
 sc_out<bool> b,c;
 //constructor: where the processes are bound to simulation kernel
-SC_CTOR(decoder){
+SC_CTOR(decoder1by2){
 	SC_METHOD(decode);
 	sensitive<<a;
 	//dont_initialize();
 }
 
-~decoder(){
+~decoder1by2(){
 //delete stuff :P
 }
 

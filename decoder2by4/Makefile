@@ -1,5 +1,5 @@
 GTKWAVE:= which gtkwave
-TARGET := decoder1by2
+TARGET := decoder
 CXX := g++
 LD := $(CXX) 
 C_FLAGS := -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c

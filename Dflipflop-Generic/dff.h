@@ -10,6 +10,6 @@ SC_MODULE (dff) {
 
 	SC_CTOR (dff) {
 		SC_METHOD (dff_method);
-			sensitive_pos << clk;
+		sensitive << clk.pos();
 	}
 };

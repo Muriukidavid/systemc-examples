@@ -1,5 +1,5 @@
 GTKWAVE:= which gtkwave
-TARGET := decoder1by2
+TARGET := reference
 CXX := g++
 LD := $(CXX) 
 C_FLAGS := -I/usr/local/systemc-2.3.2/include -O0 -g3 -Wall -c
@@ -31,8 +31,8 @@ endif
 
 test:$(TARGET)
 	./$(TARGET) 
-	gtkwave -c 4 timing_diagram.vcd
+	gtkwave -c 4 vcd_trace.vcd
 
 clean:
-	rm -f $(TARGET) *.o timing_diagram.vcd
+	rm -f $(TARGET) *.o vcd_trace.vcd
 .PHONY: $(TARGET)
