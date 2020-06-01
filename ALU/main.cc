@@ -3,7 +3,7 @@
 #include "driver.h"
 #include "monitor.h"
 
-//Adding Something
+//Adding Something more
 
 int sc_main(int argc, char* argv[]){
 	sc_signal< sc_uint<3> > s_OPCODE;
