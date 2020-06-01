@@ -3,8 +3,7 @@
 #include "driver.h"
 #include "monitor.h"
 
-//Adding Something more
-//Phillip
+//Phillip Walker
 
 int sc_main(int argc, char* argv[]){
 	sc_signal< sc_uint<3> > s_OPCODE;
