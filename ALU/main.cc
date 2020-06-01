@@ -4,6 +4,7 @@
 #include "monitor.h"
 
 //Adding Something more
+//Phillip
 
 int sc_main(int argc, char* argv[]){
 	sc_signal< sc_uint<3> > s_OPCODE;
