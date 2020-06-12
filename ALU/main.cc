@@ -3,11 +3,8 @@
 #include "driver.h"
 #include "monitor.h"
 
-<<<<<<< HEAD
 //Phillip Walker
 
-=======
->>>>>>> e20ab1a8e2da08ad288235529d6b421e202f9e75
 int sc_main(int argc, char* argv[]){
 	sc_signal< sc_uint<3> > s_OPCODE;
 	sc_signal< sc_uint<4> > s_OP1, s_OP2;
