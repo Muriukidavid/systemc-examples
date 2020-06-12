@@ -4,7 +4,6 @@
 #include "monitor.h"
 
 //Phillip Walker
-//is adding something more
 
 int sc_main(int argc, char* argv[]){
 	sc_signal< sc_uint<3> > s_OPCODE;
